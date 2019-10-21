@@ -1,0 +1,39 @@
+.confirm__mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  background: rgba(0, 0, 0, .6);
+}
+.confirm__inner{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 501;
+  background: #fff;
+  width: 300px;
+  border-radius: 10px;
+}
+.confirm__content{
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 22px;
+}
+.confirm__actions{
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  div{
+    width: 50%;
+    border-top: 1px solid #bbb;
+    box-sizing: border-box;
+    &:first-child{
+      border-right: 1px solid #bbb;
+    }
+  }
+}
